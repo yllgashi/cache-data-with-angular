@@ -15,7 +15,6 @@ export class AppComponent {
   fetchData(): void {
     this.exampleService.gerRandomData().subscribe((response) => {
       this.data = response.data;
-      this.data = 'some response';
     });
   }
 }
